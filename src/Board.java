@@ -22,7 +22,7 @@ public class Board extends JPanel {
 	int ovalCount;
 	Board() {
 		try {
-			image = ImageIO.read(new File("tree.png"));
+			image = ImageIO.read(new File("mel.jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
