@@ -1,0 +1,2 @@
+Grundlagen Bildverarbeitung
+Local Binary Pattern Implementation
