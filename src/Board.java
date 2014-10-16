@@ -1,6 +1,4 @@
-import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
@@ -14,13 +12,19 @@ import javax.swing.JPanel;
 
 public class Board extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	BufferedImage gray;
 	Image image;
 	BufferedImage in;
 	BufferedImage lpat;
 	Rectangle ovals[]=new Rectangle[(int)Math.pow(10, 8)];
 	int ovalCount;
-	Board() {
+	
+	public Board() {
 		try {
 			image = ImageIO.read(new File("mel.jpg"));
 		} catch (IOException e) {
